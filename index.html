@@ -739,38 +739,63 @@
 
 
 
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Launch static backdrop modal
-    </button>
-
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Unlock Exclusive Deals and Insights!</h1>
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel"style="font-weight:bold;" >Unlock Exclusive Deals and Insights!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
 
+
+
                     <div class="mb-3">
-                        <label for="validationCustom01" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" value="" required>
                     </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email-id</label>
+                        <input type="email" class="form-control" id="email" value="" required>
+                    </div>
+
+                    <div class="radio">
+                        <div class="form-check mb-3 zoom">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="zoom">
+                            <img src="images/zoom.png" alt="">
+                      
+                          </div>
+                          <div class="form-check mb-3 gmeet">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="gmeet" checked>
+                            <img src="images/gmeet.png" alt="">
+                      
+                          </div>
+                    </div>
+
+                    <div class="numb_date">
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Choose the Date & Time</label>
+                            <input type="datetime-local" class="form-control" id="date" value="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="number" value="" required>
+                        </div>
+                   
+                    </div>
+
+                 
+               
 
 
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
@@ -789,6 +814,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <script>
+
+let currentDate = new Date();
+let formattedDate = currentDate.toISOString().slice(0,16);
+document.getElementById("date").value = formattedDate;
+
 
         function toggleReadMore() {
             var additionalContent = document.getElementById("additionalContent");

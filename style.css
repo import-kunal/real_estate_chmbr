@@ -666,3 +666,32 @@ color: #606060;
      footer hr{
         margin: 0;
      }
+
+
+     .modal-body{
+        padding: 2rem;
+     }
+     .modal-body label{
+        font-size: 0.8rem;
+        font-weight: bold;
+     }
+
+     .numb_date, .radio{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+     }
+     .numb_date .mb-3 , .radio .form-check{
+        width: 100%;
+     }
+     .radio .form-check input{
+        position: relative;
+        top: 0.5rem;
+     }
+
+     .zoom img{
+        width: 8rem;
+     }
+     .gmeet img{
+        width: 12rem;
+     }

@@ -1,0 +1,668 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+main {
+    padding: 0rem 10rem;
+}
+.prenav{
+    text-align: center;
+    background: #f6f6f6;
+    padding: 1rem;
+}
+.prenav img{
+    width: 12rem;
+
+}
+
+.navbar{
+    padding: 1rem 10rem;
+    background-color: #4161b6 !important;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:focus, .nav-link:hover{
+color:white ;
+}
+.btn-outline-success{
+    color: white;
+    border: 1px solid #5883f9;
+}
+.btn-outline-success:hover{
+    background: #5883f9;
+}
+
+
+.container-fluid{
+    padding: 0rem;
+}
+header {
+ padding: 2rem 0rem;
+}
+.tag1{
+    display: flex;
+    justify-content: space-between;
+}
+.tag1 h3 span{
+    font-size: 1rem;
+}
+.h-container{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_h{
+    width: 65%;
+    background: rgb(255, 255, 255);
+    height: 65vh;
+    position: relative;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+
+
+  swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper2 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper2 swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+
+.right_h{
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    width: 33%;
+    height: 50vh;
+    position: relative;
+}
+.h_mid .card .card-body p{
+ color: #234e70;
+}
+.btn-primary{
+    background-color: #234e70;
+    
+}
+
+/* ----------------------------------------------------------------- */
+
+
+.tab1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.heading_tab1{
+    background: #234e70;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    margin: 0;
+}
+.heading_tab1 li{
+    text-decoration: none;
+    list-style: none;
+}
+.heading_tab1 li a{
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    list-style: none;
+    background-color: green;
+    line-height: 0;
+    position: relative;
+    top:5px;
+    border-radius: 0.5rem;
+}
+.cont_sect1{
+    border: 1px solid gray;
+
+}
+.tab1 .cont_sect1 ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.8rem 1rem ;
+
+}
+.tab1 .cont_sect1 ul li{
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+.cont_sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.cont_sect span:first-child {
+    font-weight: bold;
+}
+.cont_sect .light{
+ color: #989898;
+}
+
+.desc{
+    padding:0.8rem 2rem 2rem 2rem;
+    border: 1px solid gray;
+    margin-bottom: 2rem;
+    position: relative;
+}
+#toggleReadMore{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+.desc h5{
+    font-weight: bold;
+}
+
+
+.desc h5 {
+    margin-top: 0;
+}
+
+.desc h6 {
+    overflow: hidden;
+    max-height: 5rem; /* Adjust as needed */
+    transition: max-height 0.3s ease;
+}
+
+.desc .expanded h6 {
+    max-height: none;
+}
+
+#toggleReadMore {
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+.cont2_sect1{
+    width: 50%;
+    border-radius: 0.8rem ;
+    border: 1px solid grey;
+    margin-bottom:2rem ;
+}
+.cont2_sect1 ul{
+    padding: 0.5rem 1rem ;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+.cont2_sect1 ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.cont2_sect1 a{
+ padding: 0.5rem 1rem ;
+ background-color: green;
+ border-radius: 0.5rem;
+ position: relative;
+ top: 0.2rem;
+ text-decoration: none;
+ color: white;
+}
+.cont2_sect1 p{
+    padding: 0.5rem 1rem;
+}
+
+.amen{
+    border-radius: 0.5rem;
+    border: 1px solid grey
+}
+
+
+.amen .heading_sec2{
+    padding: 0.5rem 1rem ;
+    border-bottom: 1px solid grey;
+}
+.amen h5{
+    padding: 0.5rem 1rem ;
+}
+.amen .heading_sec2 h5{
+font-weight: bold;
+
+}
+.amen .first_ul , .amen .second_ul , .amen .third_ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem ;
+}
+.amen .first_ul li ,.amen .second_ul li, .amen .third_ul li {
+    list-style: none;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: gray;
+}
+.amen .first_ul li img ,.amen .second_ul li img, .amen .third_ul li img{
+width: 3rem;
+margin-right: 1rem;
+}
+
+.sect_3
+{
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+}
+.sect_3 ul{
+display: flex;
+justify-content: space-between;
+padding: 0.5rem 1rem;
+border-bottom: 1px solid gray;
+margin: 0;
+}
+.sect_3 ul li{
+list-style: none;
+text-decoration: none;
+}
+.sect_3 ul li a{
+    padding: 0.5rem 1rem ;
+    background-color: green;
+    border-radius: 0.5rem;
+    position: relative;
+    top: 0.2rem;
+    text-decoration: none;
+    color: white;   
+}
+
+
+.tab, .tab3 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button, .tab3 button  {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover , .tab3 button:hover {
+    background-color: #3a729d;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active , .tab3 button.active {
+    background-color: #234e70;
+    color: white;
+
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 75vh;
+    position: relative;
+  }
+  .tabcontent img{
+ width: 100%;
+ height:100%;
+ position: relative;
+ object-fit: cover;
+  }
+
+  
+  .sect_4
+{
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+}
+.sect_4 ul{
+display: flex;
+justify-content: space-between;
+padding: 0.5rem 1rem;
+border-bottom: 1px solid gray;
+margin: 0;
+}
+.sect_4 ul li{
+list-style: none;
+text-decoration: none;
+}
+.sect_4 ul li a{
+    padding: 0.5rem 1rem ;
+    background-color: green;
+    border-radius: 0.5rem;
+    position: relative;
+    top: 0.2rem;
+    text-decoration: none;
+    color: white;   
+}
+#sectionOne ul{
+display: flex;
+justify-content: space-between;
+padding: 0.5rem 3rem;
+margin: 0rem 2rem 1rem 2rem ;
+}
+.tabcontent3 p{
+    padding: 0rem 3rem;
+}
+
+#sectionOne .onee li{
+    width: 100%;
+    font-weight: bold; 
+}
+#sectionOne .twoo li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#sectionOne .twoo li button{
+    background-color: green;
+    border-radius: 0.2rem;
+color: white;
+padding: 0.2rem 0.5rem;
+font-size: 0.8rem;
+border: 1px solid rgb(0, 101, 0);
+margin-left: 1rem;
+}
+
+#sectionOne .threee {
+    padding: 0rem 0rem;
+    border-bottom: 0px solid gray;
+
+}
+#sectionOne .threee li{
+    width: 100%;
+
+}
+#sectionOne .threee div{
+    display: flex;
+}
+#sectionOne .threee li span{
+    background: rgb(192, 192, 192);
+    padding:0.2rem 0.5rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: rgb(72, 72, 72);
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+
+}
+#sectionOne .threee li input{
+    width: 80%;
+    border-radius: 0 0.5rem 0.5rem 0;
+    display: inline-block;
+    padding:0.3rem 0.5rem;
+    border: 0.5px solid rgb(192, 192, 192);
+    font-size: 0.8rem;  
+}
+
+
+
+
+#sectionTwo ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    margin: 0rem 2rem 1rem 2rem ;
+    }
+    .tabcontent3 p{
+        padding: 0rem 3rem;
+    }
+    
+    #sectionTwo .onee li{
+        width: 100%;
+        font-weight: bold; 
+    }
+    #sectionTwo .twoo li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #sectionTwo .twoo li button{
+        background-color: green;
+        border-radius: 0.2rem;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border: 1px solid rgb(0, 101, 0);
+    margin-left: 1rem;
+    }
+    
+    #sectionTwo .threee {
+        padding: 0rem 0rem;
+        border-bottom: 0px solid gray;
+    
+    }
+    #sectionTwo .threee li{
+        width: 100%;
+    
+    }
+    #sectionTwo .threee div{
+        display: flex;
+    }
+    #sectionTwo .threee li span{
+        background: rgb(192, 192, 192);
+        padding:0.2rem 0.5rem;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: rgb(87, 87, 87);
+        border-radius: 0.5rem 0rem 0rem 0.5rem;
+    
+    }
+    #sectionTwo .threee li input{
+        width: 80%;
+        border-radius: 0 0.5rem 0.5rem 0;
+        display: inline-block;
+        padding:0.3rem 0.5rem;
+        border: 0.5px solid rgb(192, 192, 192);
+        font-size: 0.8rem;  
+    }
+
+
+    .sect_5
+    {
+        margin-top: 4rem;
+        border-radius: 0.5rem;
+        border: 1px solid grey;
+    }
+    .sect_5 ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    }
+    .sect_5 ul li{
+    list-style: none;
+    text-decoration: none;
+    }
+    .sect_5 ul li a{
+        padding: 0.5rem 1rem ;
+        background-color: green;
+        border-radius: 0.5rem;
+        position: relative;
+        top: 0.2rem;
+        text-decoration: none;
+        color: white;   
+    }
+
+    .payment{
+        margin: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid grey;
+        padding : 1rem 1.5rem;
+    }
+
+    .banks {
+        padding: 1rem 0rem;
+        margin: 0rem 1rem;
+        display: flex;
+        overflow-x: hidden;
+    }
+    
+    .banks img {
+        padding: 0rem;
+        margin: 0rem 1rem;
+        border: 1px solid;
+        animation: slideIn 5s linear infinite; 
+    }
+    
+    @keyframes slideIn {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .abt{
+        display: flex;
+        padding: 1rem;
+        gap: 2rem;
+
+    }
+    .abt .lleft{
+        width: 25%;
+    }
+    .abt .lleft img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 0.5rem;
+
+    }
+    .abt .rright p{
+        margin-bottom: 0rem !important
+        ;
+    }
+    .abt .rright img{
+        margin-bottom: 1rem 
+        ;
+    }
+    .abt .rright h6{
+        color: #234e70;
+        font-weight: bold;
+    }
+    .sect_5 > p{
+padding: 1rem;
+margin-bottom: 0rem;
+color: #606060;
+    }
+    .sect_5 h1{
+        padding: 1rem;
+        font-weight: bold;
+        color: #234e70;
+    }
+
+
+    .accordion-button:not(.collapsed), .accordion-button:focus {
+        box-shadow: none !important;
+    }
+    .accordion-body{
+        color: #6f6f6f;
+        font-size: 0.8rem;
+    }
+
+    footer{
+        padding: 2rem 4rem 1rem 4rem;
+        margin-top: 4rem;
+        color: #d5d5d5;
+        background: #234e70;
+    }
+     footer img{
+        width: 15rem;
+     }
+     footer ul{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        
+     }
+     footer ul li {
+        text-align: center;
+        padding: 0.5rem;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+     }
+     .sitemap{
+        display: flex;
+     }
+    
+     footer hr{
+        margin: 0;
+     }

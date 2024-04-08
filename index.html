@@ -765,61 +765,53 @@
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel" style="font-weight:bold;">Unlock Exclusive
-                        Deals and Insights!</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+            <form action="send_email.php" method="post">
 
-
-
-
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" value="" required>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel" style="font-weight:bold;">Unlock Exclusive
+                            Deals and Insights!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email-id</label>
-                        <input type="email" class="form-control" id="email" value="" required>
-                    </div>
-
-                    <div class="radio">
-                        <div class="form-check mb-3 zoom">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="zoom" value="">
-                            <img src="images/zoom.png" alt="">
-
-                        </div>
-                        <div class="form-check mb-3 gmeet">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="gmeet" value="">
-                            <img src="images/gmeet.png" alt="">
-
-                        </div>
-                    </div>
-
-                    <div class="numb_date">
+                    <div class="modal-body">
                         <div class="mb-3">
-                            <label for="number" class="form-label">Choose the Date & Time</label>
-                            <input type="datetime-local" class="form-control" id="date" value="" required>
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
+            
                         <div class="mb-3">
-                            <label for="number" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="number" value="" required>
+                            <label for="email" class="form-label">Email-id</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
-
+            
+                        <div class="radio">
+                            <div class="form-check mb-3 zoom">
+                                <input class="form-check-input" type="radio" name="meeting_platform" id="zoom" value="Zoom">
+                                <img src="images/zoom.png" alt="">
+                            </div>
+                            <div class="form-check mb-3 gmeet">
+                                <input class="form-check-input" type="radio" name="meeting_platform" id="gmeet" value="Google Meet">
+                                <img src="images/gmeet.png" alt="">
+                            </div>
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="datetime" class="form-label">Choose the Date & Time</label>
+                            <input type="datetime-local" class="form-control" id="datetime" name="datetime" required>
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" name="phone" required>
+                        </div>
                     </div>
-
-
-
-
-
-
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
+            
+            </form>
+            
             </div>
         </div>
     </div>

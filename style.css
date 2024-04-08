@@ -901,6 +901,9 @@ color: #606060;
           .sitemap {
             flex-direction: column;
           }
+          .gmeet img {
+            width: 10rem;
+          }
 
 
       }

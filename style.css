@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth !important;
+    scroll-padding: 5rem;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -794,9 +798,7 @@ color: #606060;
           .heading_tab1{
             padding: 0.8rem;
           }
-          .heading_tab1 li{
-
-        }
+      
         .heading_tab1 li:has(a){
             text-align: end;
             font-size: 0.8rem;

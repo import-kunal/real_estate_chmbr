@@ -18,9 +18,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Send email
     if (mail($to, $subject, $message, $headers)) {
-        echo "Email sent successfully!";
+        $msg = "Your Email Was Sent Successfully !!";
+        header("Location: index.php?msg=$msg");
+
     } else {
-        echo "Failed to send email. Please try again later.";
+        $msg_not = "Oops ! there was an issue in sending this mail.";
+        header("Location: index.php?msg=$msg");
+
     }
 }
 

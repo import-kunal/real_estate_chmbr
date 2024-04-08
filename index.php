@@ -909,6 +909,28 @@
 
     </script>
 
+
+<?php if (!empty($_GET['msg'])) { ?>
+
+    <?php
+
+    echo '<script>alert("Email Sent Sucessfully")</script>';
+
+    ?>
+<?php } ?>
+
+
+
+
+<?php if (!empty($_GET['msg_not'])) { ?>
+
+    <?php
+
+    echo '<script>alert("Oops ! there was an issue in sending this mail.")</script>';
+
+    ?>
+<?php } ?>
+
 </body>
 
 </html>

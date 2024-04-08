@@ -24,7 +24,7 @@ main {
 
 .navbar{
     padding: 1rem 10rem;
-    background-color: #4161b6 !important;
+    background-color: #234e70!important;
 }
 .nav-link{
     color: white;
@@ -34,10 +34,11 @@ color:white ;
 }
 .btn-outline-success{
     color: white;
-    border: 1px solid #5883f9;
+    border: 1px solid #a1acf9;
 }
-.btn-outline-success:hover{
-    background: #5883f9;
+.btn-outline-success:hover,.btn-outline-success:focus, .btn-outline-success:active{
+    background: #a1acf9;
+    outline: #a1acf9 ;
 }
 
 
@@ -128,15 +129,20 @@ swiper-container {
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
+
   }
 
 
 .right_h{
     border-radius: 0.5rem;
-    border: 1px solid gray;
     width: 33%;
-    height: 50vh;
+    /* height: 50vh; */
     position: relative;
+}
+.h_mid{
+    box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
+    border-radius: 0.5rem;
 }
 .h_mid .card .card-body p{
  color: #234e70;
@@ -145,7 +151,22 @@ swiper-container {
     background-color: #234e70;
     
 }
-
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
 /* ----------------------------------------------------------------- */
 
 
@@ -154,6 +175,12 @@ swiper-container {
     flex-direction: column;
     margin-top: 4rem;
 }
+.abts{
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
+
+}
 .heading_tab1{
     background: #234e70;
     color: white;
@@ -161,6 +188,7 @@ swiper-container {
     justify-content: space-between;
     padding: 0.8rem 2rem;
     margin: 0;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 .heading_tab1 li{
     text-decoration: none;
@@ -178,7 +206,7 @@ swiper-container {
     border-radius: 0.5rem;
 }
 .cont_sect1{
-    border: 1px solid gray;
+    border-bottom: 0.5px solid rgb(195, 195, 195);
 
 }
 .tab1 .cont_sect1 ul{
@@ -208,8 +236,6 @@ swiper-container {
 
 .desc{
     padding:0.8rem 2rem 2rem 2rem;
-    border: 1px solid gray;
-    margin-bottom: 2rem;
     position: relative;
 }
 #toggleReadMore{
@@ -246,14 +272,16 @@ swiper-container {
 .cont2_sect1{
     width: 50%;
     border-radius: 0.8rem ;
-    border: 1px solid grey;
     margin-bottom:2rem ;
+    box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
+
 }
 .cont2_sect1 ul{
     padding: 0.5rem 1rem ;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid grey;
+    border-bottom: 0.5px solid rgb(195, 195, 195);
+
 }
 .cont2_sect1 ul li {
     text-decoration: none;
@@ -274,13 +302,15 @@ swiper-container {
 
 .amen{
     border-radius: 0.5rem;
-    border: 1px solid grey
+    box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
+
 }
 
 
 .amen .heading_sec2{
     padding: 0.5rem 1rem ;
-    border-bottom: 1px solid grey;
+    border-bottom: 0.5px solid rgb(195, 195, 195);
+
 }
 .amen h5{
     padding: 0.5rem 1rem ;
@@ -310,13 +340,13 @@ margin-right: 1rem;
 {
     margin-top: 4rem;
     border-radius: 0.5rem;
-    border: 1px solid grey;
+    box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
+
 }
 .sect_3 ul{
 display: flex;
 justify-content: space-between;
 padding: 0.5rem 1rem;
-border-bottom: 1px solid gray;
 margin: 0;
 }
 .sect_3 ul li{
@@ -384,13 +414,15 @@ text-decoration: none;
 {
     margin-top: 4rem;
     border-radius: 0.5rem;
-    border: 1px solid grey;
+    border-bottom: 0.5px solid rgb(195, 195, 195);
+    box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
+
 }
 .sect_4 ul{
 display: flex;
 justify-content: space-between;
 padding: 0.5rem 1rem;
-border-bottom: 1px solid gray;
+/* border-bottom: 1px solid gray; */
 margin: 0;
 }
 .sect_4 ul li{
@@ -411,6 +443,7 @@ display: flex;
 justify-content: space-between;
 padding: 0.5rem 3rem;
 margin: 0rem 2rem 1rem 2rem ;
+border: none;
 }
 .tabcontent3 p{
     padding: 0rem 3rem;
@@ -442,6 +475,12 @@ margin-left: 1rem;
 }
 #sectionOne .threee li{
     width: 100%;
+
+}
+.emi{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid rgb(195, 195, 195);
 
 }
 #sectionOne .threee div{
@@ -534,13 +573,14 @@ margin-left: 1rem;
     {
         margin-top: 4rem;
         border-radius: 0.5rem;
-        border: 1px solid grey;
+        /* border-bottom: 0.5px solid rgb(195, 195, 195); */
+        box-shadow: 0.05rem 0.05rem 1rem 0.1rem rgba(0 0 0 / 15%);
     }
     .sect_5 ul{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid gray;
+    border-bottom: 0.5px solid rgb(195, 195, 195);
     margin: 0;
     }
     .sect_5 ul li{
@@ -629,9 +669,13 @@ color: #606060;
     .accordion-button:not(.collapsed), .accordion-button:focus {
         box-shadow: none !important;
     }
+    .accordion-button{
+        padding: 2rem;
+    }
     .accordion-body{
         color: #6f6f6f;
         font-size: 0.8rem;
+        padding: 2rem;
     }
 
     footer{
@@ -695,3 +739,166 @@ color: #606060;
      .gmeet img{
         width: 12rem;
      }
+
+
+
+
+     /* =======================================MEDIA QUERY============================================================ */
+     @media screen and (max-width: 299.98px) {
+        html {
+          font-size: 30%;
+        }
+      
+        .navbar-collapse,
+        .call {
+          display: none;
+        }
+      }
+      
+      @media screen and (max-width: 359px) and (min-width: 300px) {
+      }
+      
+      @media screen and (max-width: 480px) and (min-width: 300px) {
+
+        html {
+            font-size: 90%;
+          }
+          main{
+            padding: 0rem 1rem ;
+          }
+          .navbar{
+            padding: 0.5rem 1rem;
+          }
+          .tag1{
+            gap: 2rem;
+          }
+          .tag1 h3{
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+
+          .h-container{
+            flex-direction: column;
+            gap: 2rem;
+          }
+          .left_h{
+
+              width: 100%;
+          }
+          .right_h{
+            width: 100%;
+          }
+          header{
+            padding: 0rem;
+          }
+          .heading_tab1{
+            padding: 0.8rem;
+          }
+          .heading_tab1 li{
+
+        }
+        .heading_tab1 li:has(a){
+            text-align: end;
+            font-size: 0.8rem;
+                width: 100%;
+          }
+          .cont_sect1{
+            display: flex;
+          }
+          .tab1 .cont_sect1 ul{
+            flex-direction: column;
+            gap: 1rem;
+          }
+          .cont2_sect1{
+            width: 100%;
+          }
+          .amen .heading_sec2 h5{
+            padding: 1rem 0rem;
+          }
+          .amen .first_ul, .amen .second_ul, .amen .third_ul {
+            flex-direction: column;
+            gap:2rem;
+          }
+          .tabcontent{
+            height: 100%;
+          }
+          .deck{
+            display: flex;
+          }
+
+          .deck .onee , .deck .twoo{
+            flex-direction: column;
+          }
+          .deck .onee  li , .deck .twoo li{
+            height: 5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+          }
+          .deck .twoo li img{
+            width: 5rem;
+          }
+
+          .vert{
+            display: flex;
+          }
+
+        
+
+          
+
+          #sectionOne ul {
+            padding: 0.5rem;
+            margin: 0rem 0.5rem 1rem 0.5rem;
+
+          }
+
+          .hors .onee , .hors .twoo{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem !important;
+            margin: 0.5rem !important;
+          }
+          .threee{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+          }
+          .threee li input{
+            width: 100%;
+          }
+          .fl {
+            display: flex;
+          }
+          .fl .twoo li img{
+            width: 5rem;
+          }
+          .fl .hors .onee  li , .fl .hors .twoo li{
+            height: 5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+          }
+          .abt .lleft{
+            width: 100%;
+          }
+
+          footer{
+            padding: 2rem;
+          }
+
+          footer ul {
+            flex-direction: column;
+            padding: 0rem;
+            gap: 2rem;
+          }
+          .sitemap {
+            flex-direction: column;
+          }
+
+
+      }

@@ -1,4 +1,5 @@
 <?php
+$msg = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -19,12 +20,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send email
     if (mail($to, $subject, $message, $headers)) {
         $msg = "Your Email Was Sent Successfully !!";
-        header("Location: index.php?msg=$msg");
-
+        // Redirect to index.php with success message
+        header("Location: index.php?msg=".urlencode($msg));
+        exit(); // Ensure script stops execution after redirection
     } else {
-        $msg_not = "Oops ! there was an issue in sending this mail.";
-        header("Location: index.php?msg=$msg");
-
+        $msg = "Oops! There was an issue in sending this mail.";
+        // Redirect to index.php with error message
+        header("Location: index.php?msg=".urlencode($msg));
+        exit(); // Ensure script stops execution after redirection
     }
 }
-

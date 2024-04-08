@@ -786,11 +786,11 @@
             
                         <div class="radio">
                             <div class="form-check mb-3 zoom">
-                                <input class="form-check-input" type="radio" name="meeting_platform" id="zoom" value="Zoom">
+                                <input class="form-check-input" type="radio" name="meeting_platform" id="zoom" value="Zoom" required>
                                 <img src="images/zoom.png" alt="">
                             </div>
                             <div class="form-check mb-3 gmeet">
-                                <input class="form-check-input" type="radio" name="meeting_platform" id="gmeet" value="Google Meet">
+                                <input class="form-check-input" type="radio" name="meeting_platform" id="gmeet" value="Google Meet" required>
                                 <img src="images/gmeet.png" alt="">
                             </div>
                         </div>
